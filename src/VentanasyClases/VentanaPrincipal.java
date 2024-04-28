@@ -254,7 +254,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton2);
         jButton2.setBounds(10, 10, 20, 20);
 
-        jButton3.setBackground(new java.awt.Color(204, 0, 204));
+        jButton3.setBackground(new java.awt.Color(102, 255, 102));
         jButton3.setForeground(new java.awt.Color(153, 153, 0));
         jButton3.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -273,7 +273,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton3);
         jButton3.setBounds(40, 10, 20, 20);
 
-        jButton4.setBackground(new java.awt.Color(189, 182, 182));
+        jButton4.setBackground(new java.awt.Color(51, 102, 255));
         jButton4.setForeground(new java.awt.Color(153, 153, 0));
         jButton4.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -333,7 +333,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton6);
         jButton6.setBounds(40, 40, 20, 20);
 
-        jButton7.setBackground(new java.awt.Color(164, 167, 255));
+        jButton7.setBackground(new java.awt.Color(102, 102, 255));
         jButton7.setForeground(new java.awt.Color(153, 153, 0));
         jButton7.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -352,7 +352,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton7);
         jButton7.setBounds(70, 70, 20, 20);
 
-        jButton8.setBackground(new java.awt.Color(141, 141, 141));
+        jButton8.setBackground(new java.awt.Color(255, 255, 51));
         jButton8.setForeground(new java.awt.Color(153, 153, 0));
         jButton8.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -371,7 +371,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton8);
         jButton8.setBounds(100, 40, 20, 20);
 
-        jButton9.setBackground(new java.awt.Color(0, 0, 255));
+        jButton9.setBackground(new java.awt.Color(51, 255, 204));
         jButton9.setForeground(new java.awt.Color(153, 153, 0));
         jButton9.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -418,6 +418,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton11);
         jButton11.setBounds(40, 70, 20, 20);
 
+        jButton12.setBackground(new java.awt.Color(255, 51, 204));
         jButton12.setForeground(new java.awt.Color(153, 153, 0));
         jButton12.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -431,7 +432,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         jPanel2.add(jButton12);
         jButton12.setBounds(70, 40, 20, 20);
 
-        jButton13.setBackground(new java.awt.Color(0, 51, 51));
+        jButton13.setBackground(new java.awt.Color(255, 153, 153));
         jButton13.setForeground(new java.awt.Color(153, 153, 0));
         jButton13.setBorder(javax.swing.BorderFactory.createMatteBorder(40, 40, 40, 40, new java.awt.Color(102, 255, 255)));
         jButton13.addMouseListener(new java.awt.event.MouseAdapter() {

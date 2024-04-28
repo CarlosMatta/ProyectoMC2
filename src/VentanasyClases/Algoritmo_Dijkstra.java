@@ -16,7 +16,7 @@ public class Algoritmo_Dijkstra {
    private  Arboles arboles;
    private int subTope;
    private Nodo auxi=null;
-   private int auxAumulado; // es un acumulado auxiliar
+   private int auxAumulado; 
    private int subAcomulado;
    private Nodo nodo[]; 
    private int tope;
@@ -38,7 +38,7 @@ public class Algoritmo_Dijkstra {
     }
         
     public void dijkstra(){ 
-         for (int i = 0; i < tope; i++)  // creamos el vector nodo del tamaño de tope el cual tiene el numero de nodo pintados 
+         for (int i = 0; i < tope; i++) 
                     nodo[i]= new Nodo(); 
          
         if(permanente != nodoFin){
@@ -52,7 +52,7 @@ public class Algoritmo_Dijkstra {
             
             do{            
               subAcomulado=0;
-              auxAumulado = 2000000000; // lo igualamos a esta cifra ya q el acomulado de los nodos, supuestamente  nunca sera mayor 
+              auxAumulado = 2000000000; 
               nodo[permanente].setEtiqueta(true); 
               for (int j = 0; j < tope; j++) {
                   if(arboles.getmAdyacencia(j, permanente)==1){
@@ -71,7 +71,7 @@ public class Algoritmo_Dijkstra {
                        }
                  }
               }
-              for (int i = 0; i <tope; i++) { // buscamos cual de los nodos visitado tiene el acomulado menor par escogerlo como permanente 
+              for (int i = 0; i <tope; i++) { 
                 if(nodo[i].isVisitado()== true && nodo[i].isEtiqueta()== false){
                    if(nodo[i].getAcumulado()<=auxAumulado){
                        permanente= nodo[i].getNombre();

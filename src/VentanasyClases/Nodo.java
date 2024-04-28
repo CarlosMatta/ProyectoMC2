@@ -14,7 +14,7 @@ public class Nodo {
    private  int nombre ;
    private boolean visitado ;
    private boolean etiqueta;
-   private int acumulado; // lleva el acoulado de cada nodo
+   private int acumulado; 
    private Nodo Predecesor;
    
    public Nodo(){

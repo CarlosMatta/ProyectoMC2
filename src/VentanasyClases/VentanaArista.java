@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package VentanasyClases;
 
 import java.awt.Frame;
@@ -17,20 +16,19 @@ public class VentanaArista extends javax.swing.JFrame {
 
     /**
      * Creates new form NewJFrame
-     */  
-      Pintar pintar ;
-      Arboles arboles ;
-      Frame frame1;
-    public VentanaArista(Arboles arbole,Pintar pinta ,int I,Frame frame){
-       this.pintar =pinta;
-       this.arboles=arbole;
-       this.i=I;
-       frame1 = frame;
-        
+     */
+    Pintar pintar;
+    Arboles arboles;
+    Frame frame1;
+
+    public VentanaArista(Arboles arbole, Pintar pinta, int I, Frame frame) {
+        this.pintar = pinta;
+        this.arboles = arbole;
+        this.i = I;
+        frame1 = frame;
+
         initComponents();
-      
-        
-        
+
     }
 
     /**
@@ -161,41 +159,43 @@ public class VentanaArista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         int x;int y;int ta;
-         if(n1.getText().length()<1 || n2.getText().length()<1 ||tm.getText().length()<1)
-           JOptionPane.showMessageDialog(null,"Error.. Faltan datos : ");
-         else{
-           x=Integer.parseInt(n1.getText());
-           y=Integer.parseInt(n2.getText());
-           ta=Integer.parseInt(tm.getText());         
-     
-         if(x==y)
-           JOptionPane.showMessageDialog(null,"Error.. Debe digitar un nodo diferente a : "+y);
-         else if(x<0 || x>=i || y<0 || y>=i){
-            JOptionPane.showMessageDialog(null,"Error.. Nodos No validos "); 
-         }else{
-             arboles.setmAdyacencia(x, y, 1);
-             arboles.setmAdyacencia(y, x, 1);
-             arboles.setmCoeficiente(x, y, ta);
-             arboles.setmCoeficiente(y, x, ta);
-             n1.setText(null);
-             n2.setText(null);
-             tm.setText(null);
-            Pintar.pintarLinea(VentanaPrincipal.jPanel1.getGraphics(),arboles.getCordeX(x), arboles.getCordeY(x), arboles.getCordeX(y), arboles.getCordeY(y), ta);
-            
-         } 
-         }
+        int x;
+        int y;
+        int ta;
+        if (n1.getText().length() < 1 || n2.getText().length() < 1 || tm.getText().length() < 1)
+            JOptionPane.showMessageDialog(null, "Error.. Faltan datos : ");
+        else {
+            x = Integer.parseInt(n1.getText());
+            y = Integer.parseInt(n2.getText());
+            ta = Integer.parseInt(tm.getText());
+
+            if (x == y) {
+                JOptionPane.showMessageDialog(null, "Error.. Debe digitar un nodo diferente a : " + y);
+            } else if (x < 0 || x >= i || y < 0 || y >= i) {
+                JOptionPane.showMessageDialog(null, "Error.. Nodos No validos ");
+            } else {
+                arboles.setmAdyacencia(x, y, 1);
+                arboles.setmAdyacencia(y, x, 1);
+                arboles.setmCoeficiente(x, y, ta);
+                arboles.setmCoeficiente(y, x, ta);
+                n1.setText(null);
+                n2.setText(null);
+                tm.setText(null);
+                Pintar.pintarLinea(VentanaPrincipal.jPanel1.getGraphics(), arboles.getCordeX(x), arboles.getCordeY(x), arboles.getCordeX(y), arboles.getCordeY(y), ta);
+
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void n1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_n1KeyReleased
-     String tem = new String(n1.getText());
-       StringBuffer tem2= new StringBuffer();       
-        for (int j = 0; j < tem.length(); j++) {          
-            if(Character.isDigit(tem.charAt(j))){                
-             tem2.append(tem.charAt(j));
-            } 
+        String tem = new String(n1.getText());
+        StringBuffer tem2 = new StringBuffer();
+        for (int j = 0; j < tem.length(); j++) {
+            if (Character.isDigit(tem.charAt(j))) {
+                tem2.append(tem.charAt(j));
+            }
         }
-        n1.setText(""+tem2);  
+        n1.setText("" + tem2);
     }//GEN-LAST:event_n1KeyReleased
 
     private void n1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_n1KeyPressed
@@ -203,25 +203,25 @@ public class VentanaArista extends javax.swing.JFrame {
     }//GEN-LAST:event_n1KeyPressed
 
     private void n2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_n2KeyReleased
-      String tem = new String(n2.getText());
-       StringBuffer tem2= new StringBuffer();       
-        for (int j = 0; j < tem.length(); j++) {          
-            if(Character.isDigit(tem.charAt(j))){                
-             tem2.append(tem.charAt(j));
-            } 
+        String tem = new String(n2.getText());
+        StringBuffer tem2 = new StringBuffer();
+        for (int j = 0; j < tem.length(); j++) {
+            if (Character.isDigit(tem.charAt(j))) {
+                tem2.append(tem.charAt(j));
+            }
         }
-        n2.setText(""+tem2);        // TODO add your handling code here:
+        n2.setText("" + tem2);        // TODO add your handling code here:
     }//GEN-LAST:event_n2KeyReleased
 
     private void tmKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tmKeyReleased
-       String tem = new String(tm.getText());
-       StringBuffer tem2= new StringBuffer();       
-        for (int j = 0; j < tem.length(); j++) {          
-            if(Character.isDigit(tem.charAt(j))){                
-             tem2.append(tem.charAt(j));
-            } 
+        String tem = new String(tm.getText());
+        StringBuffer tem2 = new StringBuffer();
+        for (int j = 0; j < tem.length(); j++) {
+            if (Character.isDigit(tem.charAt(j))) {
+                tem2.append(tem.charAt(j));
+            }
         }
-        tm.setText(""+tem2); // TODO add your handling code here:
+        tm.setText("" + tem2); // TODO add your handling code here:
     }//GEN-LAST:event_tmKeyReleased
 
     private void tmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmActionPerformed
@@ -233,7 +233,7 @@ public class VentanaArista extends javax.swing.JFrame {
     }//GEN-LAST:event_n1ActionPerformed
 
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
-           // TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_formWindowClosed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -270,11 +270,11 @@ public class VentanaArista extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-               // new VentanaArista().setVisible(true);
+                // new VentanaArista().setVisible(true);
             }
         });
     }
-private int i=0;
+    private int i = 0;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

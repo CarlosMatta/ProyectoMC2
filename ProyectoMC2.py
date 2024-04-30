@@ -23,11 +23,12 @@ add_edge_button.pack()
 
 
 
-figure = Figure(figsize=(7,7))
+figure = Figure(figsize=(5,5))
 ax = figure.add_subplot(111)
 canvas=FigureCanvasTkAgg(figure, root)
 canvas.get_tk_widget().pack()
 
+#Método para dibujar el grafo
 def draw_graph(bfs_edges=None):
     ax.clear()
     if bfs_edges:
@@ -41,17 +42,19 @@ def draw_graph(bfs_edges=None):
 
 draw_button = tk.Button(root, text="Dibujar grafo", command=draw_graph)
 draw_button.pack()
-
+#Metodo de la busqueda por anchura
 def show_bfs():
     bfs_edges=list(nx.bfs_edges(G,source=vertex_entry.get()))
     draw_graph(bfs_edges)
     canvas.draw()
 
+#Metodo de la busqueda a lo largo
 def show_dfs():
     dfs_edges=list(nx.dfs_edges(G,source=vertex_entry.get()))
     draw_graph(dfs_edges)
     canvas.draw()
 
+#Metodo a paso a paso busqueda por anchura
 def order_bfs(graph,start_node):
     visited = set()
     q = queue.Queue()
@@ -68,6 +71,7 @@ def order_bfs(graph,start_node):
                     q.put(node)
     return order 
 
+#Metodo a paso a paso busqueda a lo largo
 def order_dfs(graph, start_node, visited = None):
     if visited is None:
         visited=set()
@@ -83,6 +87,7 @@ def order_dfs(graph, start_node, visited = None):
 
     return order  
 
+#Metodo para mostrar el paso a paso de manera gráfica
 def visualize_search(order, title,  G, pos):
     plt.figure
     plt.title(title)

@@ -61,7 +61,7 @@ En la parte inferior se encuentran los botones de los diferentes algoritmos de b
 
 Al seleccionar cualquiera de estos algoritmos, el resultado o simulación se muestra en una ventana emergente de cómo va recorriendo cada nodo hasta realizar el recorrido completo. 
  
-Link video: https://drive.google.com/file/d/1MevUYhR9yT9W5Ibh1tb8pvTapvqjP3o9/view?usp=drive_link 
+Link video: https://drive.google.com/file/d/1vjZ96zvVSnUyctjGDy9wX7biOyqNUSw4/view?usp=drive_link 
 
 
 

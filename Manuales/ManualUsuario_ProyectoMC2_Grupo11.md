@@ -35,8 +35,8 @@ La funcionalidad del programa empieza desde diseñar un grafo desde cero, es dec
 
 ### Vértices 
 Los vértices son los puntos donde se encuentran dos o más objeto unidimensionales, en caso de los grafos serían las aristas. En la parte superior se localiza el espacio para ingresar la denominación de los vértices que se deseen. Para que aparezca en el plano, se debe clickear "Dibujar grafo".
-
-![Puntos](Imgs/Puntos.jpg)  
+  
+![Puntos](Imgs/Puntos.JPG)  
 
 ![Grafo Puntos](Imgs/GrafoPuntos.jpeg)     
 
